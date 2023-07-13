@@ -1,8 +1,8 @@
 function NewGame(){
 
-    <div>
+    return (<div>
       new Game
-    </div>
+    </div>)
 
 
 }

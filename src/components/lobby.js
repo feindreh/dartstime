@@ -1,8 +1,8 @@
 function Lobby(){
 
-    <div>
+    return (<div>
       Lobby
-    </div>
+    </div>)
 
 
 }

@@ -1,8 +1,8 @@
 function NewPlayer(){
 
-    <div>
+    return (<div>
       new Player
-    </div>
+    </div>)
 
 
 }
