@@ -1,4 +1,4 @@
-function Loading(){
+function NewPlayer(){
 
     <div>
       new Player
@@ -7,4 +7,4 @@ function Loading(){
 
 }
 
-export default Loading
+export default NewPlayer
