@@ -1,8 +1,10 @@
-function NewPlayer(){
+function NewPlayer(props){
 
-    return (<div>
-      new Player
-    </div>)
+  const {change} = props
+  return (<div>
+      <div>Neuer Spieler</div>
+      <button type = "button" onClick = {() => {change(2)}}>Zurück</button>
+      </div>)
 
 
 }
