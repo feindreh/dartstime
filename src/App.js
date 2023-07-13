@@ -3,7 +3,9 @@ import "./style.css"
 function App() {
   return (
     <div className="App">
-      hi
+      <div>Darts App</div>
+      <div>Ich bin ein Bild</div>
+      <button type="button">Start</button>
     </div>
   );
 }
