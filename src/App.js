@@ -15,13 +15,13 @@ function App() {
 
   switch(state){
     case 1 :
-      return(<div className = "App"> <Loading/> </div>)
+      return(<div className = "App"> <Loading change = {setState}/> </div>)
     case 2 : 
-      return(<div className = "App"> <Lobby/> </div>)
+      return(<div className = "App"> <Lobby  change = {setState}/> </div>)
     case 3 : 
-      return (<div className = "App"> <NewPlayer/> </div>)
+      return (<div className = "App"> <NewPlayer  change = {setState}/> </div>)
     case 4 :
-      return (<div className = "App"> <NewGame/> </div>)
+      return (<div className = "App"> <NewGame  change = {setState}/> </div>)
     default:
       return <div>Upsi</div>
   }
