@@ -1,12 +1,17 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+
 import { getAllPlayers } from "../firebase/firebase"
+
+import Ladder from "./ladder"
+
 function Lobby(props){
 
     const {change} = props
+    const [players,setPlayers] = useState([])
 
     const loadData = async()=>{
         const data = await getAllPlayers()
-        console.log(data)
+        setPlayers(data)
     }
 
     useEffect(()=>{
@@ -16,7 +21,7 @@ function Lobby(props){
     return (<div>
               <button type = "button" onClick={()=>{change(4)}}>Spiel eintragen</button>
               <button type = "button" onClick= {()=>{change(3)}}>Neuer Spieler</button>
-              <div>Coole Rangliste</div>
+              <Ladder players = {players}/>
           </div>)
 
 
